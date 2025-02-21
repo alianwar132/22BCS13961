@@ -22,7 +22,7 @@ function App() {
       // Validate input is proper JSON
       const jsonData = JSON.parse(input);
       // Make the POST API call
-      const res = await axios.post("https://22-bcs-13961.vercel.app/bfhl", jsonData);
+      const res = await axios.post("https://bajaj-backend-dun.vercel.app/bfhl", jsonData);
       setApiResponse(res.data);
     } catch (error) {
       alert("Invalid JSON input or API error!");
@@ -33,7 +33,7 @@ function App() {
   // Function to handle GET API call
   const handleGetRequest = async () => {
     try {
-      const res = await axios.get("https://22-bcs-13961.vercel.app/bfhl");
+      const res = await axios.get("https://bajaj-backend-dun.vercel.app/bfhl");
       setOperationCode(res.data.operation_code);
     } catch (error) {
       alert("Error calling GET API");
